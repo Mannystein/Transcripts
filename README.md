@@ -6,10 +6,11 @@ High-performance Python/C extension for extracting ordinal patterns, transcripts
 
 * Delay vector construction
 * Ordinal pattern generation
-* Transcript extraction between paired time series
+* Transcript calculation between two time series
 * Permutation entropy
 * Order class analysis
 * Coupling complexity
+* Transcript mutual information
 * Jensen–Shannon divergence for symbolic series
 
 ## Installation
