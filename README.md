@@ -36,7 +36,7 @@ Generate delay vectors from a 1D time series.
 
 ### `get_transcripts(data1, data2, delay, dim)`
 
-Generate transcripts between two time series.
+Generate transcripts [1] between two time series.
 
 **Args**
 
@@ -49,13 +49,9 @@ Generate transcripts between two time series.
 
 * int32 NumPy array of transcripts
 
-**References**
-
-- [1]
-
 ### `permutation_entropy(data, delay, dim)`
 
-Generate symbols for permutation entropy.
+Calculate permutation entropy [2] of.
 
 **Args**
 
@@ -67,37 +63,26 @@ Generate symbols for permutation entropy.
 
 * int32 symbol array
 
-**References**
-
-- [2]
 
 ### `find_symbols(data, tau, p)`
 
-Compute ordinal patterns from a time series.
+Compute ordinal patterns [2] from a time series.
 
 **Args** same as above.
 
 **Returns** int32 symbol array.
-
-**References**
-
-- [2]
 
 ### `find_order_classes(data, tau, p)`
  
- Create ordinal patterns and calculate resp. order classes from time series.
+ Create ordinal patterns and calculate resp. order classes [1] from time series.
 
 **Args** same as above.
 
 **Returns** int32 symbol array.
 
-**References**
-
-- [1]
-
 ### `transcript_mi(data1, data2, symbol_delay, delay, dim)`
 
-Compute mutual information based on transcripts.
+Compute asymmetric mutual information based on transcripts [3].
 
 **Args**
 
@@ -109,23 +94,15 @@ Compute mutual information based on transcripts.
 
 **Returns** int32 symbol array.
 
-**References**
-
-- [3]
-
 ### `coupling_complexity(data, delay, dim)`
 
-Compute coupling complexity between multiple time series.
+Compute coupling complexity [4] between multiple time series.
 
 * `data`: 2D NumPy array of shape (len_series, n_series) created by np.column_stack((data1, data2, ...))
 * `delay`: embedding delay
 * `dim`: embedding dimension
 
 **Returns** int32 symbol array.
-
-**References**
-
-- [4]
 
 ### `coupling_complexity_symbols(symbols)`
 
