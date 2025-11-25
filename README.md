@@ -154,9 +154,13 @@ Compute the Jensen–Shannon divergence for order classes between two time serie
 import numpy as np
 import transcripts as tr
 
-data = np.random.randn(1000)
-vecs = tr.delay_vectors(data, tau=1, p=3)
-syms = tr.find_symbols(data, tau=1, p=3)
+data1 = np.random.randn(1000)
+data2 = np.random.randn(1000)
+data3 = np.random.randn(1000)
+vecs = tr.delay_vectors(data1, tau=1, p=3)
+syms = tr.find_symbols(data1, tau=1, p=3)
+trs = tr.get_transcripts(data1,data2,tau=1,p=3)
+cc = sb.coupling_complexity(np.column_stack((data1,data2,data3)),tau=1,p=3)
 ```
 
 ## Module Definition
