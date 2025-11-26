@@ -1,6 +1,6 @@
 # Transcripts
 
-High-performance Python/C extension for extracting ordinal patterns, transcripts, delay vectors, and related information-theoretic measures from time series. The module exposes a set of optimized functions implemented in C and wrapped for Python.
+High-performance Python/C extension for calculaing ordinal patterns, transcripts, delay vectors, and related information-theoretic measures from time series. The module exposes a set of optimized functions implemented in C and wrapped for Python.
 
 ## Features
 
